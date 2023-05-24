@@ -59,3 +59,8 @@ cy.get(#elements).each(element => {
 - `cy.log()` je veľmi nápomocný a je dobrou praxou ho používať kvôli prehľadnosti testov.
 - `cy.pause()` - pozastaví test a nemusíme čakať kým sa test skončí
 
+## 1.6. Práca s textom
+
+- `cy.get("element").should("have.text", "text")` - overí, že text elementu je rovnaký ako text v teste, napr. "cypress framework" je rovnaký ako "cypress framework"
+- `cy.get("element").should("contain.text", "text")` - overí, že element obsahuje text napr. "cypress framework" obsahuje "cypress"
+
